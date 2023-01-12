@@ -204,7 +204,8 @@
                         html += "</div>";
                         html += "<div class='modal-footer'>";
                         html += "<button type='button' class='btn btn-secondary' data-dismiss='modal'>Cancelar</button>";
-                        html += "<button type='button' class='btn btn-primary' onclick='borra_articulo_carrito(" + articulo.id_articulo + "); muestra_carrito();' data-dismiss='modal'>Eliminar</button>";
+                        // espera un 1 segundo para que se actualice el carrito
+                        html += "<button type='button' class='btn btn-primary' onclick='borra_articulo_carrito(" + articulo.id_articulo + "); setTimeout(muestra_carrito, 100);' data-dismiss='modal'>Eliminar</button>";
                         html += "</div>";
                         html += "</div>";
                         html += "</div>";

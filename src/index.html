@@ -147,7 +147,7 @@
                         html += "<td>" + articulo.precio + "</td>";
                         html += "<td>" + articulo.cantidad + "</td>";
                         html += "<td><input type='number' id='txtCantidadCompra" + articulo.id_articulo + "' value='1' min='1' max='" + articulo.cantidad + "'></td>";
-                        html += "<td><button class='btn btn-primary' onclick='compra_articulo(" + articulo.id_articulo + "); busca_articulo();'>Comprar</button></td>";
+                        html += "<td><button class='btn btn-primary' onclick='compra_articulo(" + articulo.id_articulo + "); busca_articulo()'>Comprar</button></td>";
                         html += "</tr>";
                     }
                     html += "</table>";
@@ -204,7 +204,7 @@
                         html += "</div>";
                         html += "<div class='modal-footer'>";
                         html += "<button type='button' class='btn btn-secondary' data-dismiss='modal'>Cancelar</button>";
-                        html += "<button type='button' class='btn btn-primary' onclick='borra_articulo_carrito(" + articulo.id_articulo + "); muestra_carrito();' data-dismiss='modal'>Eliminar</button>";
+                        html += "<button type='button' class='btn btn-primary' onclick='borra_articulo_carrito(" + articulo.id_articulo + "); muestra_carrito()' data-dismiss='modal'>Eliminar</button>";
                         html += "</div>";
                         html += "</div>";
                         html += "</div>";
